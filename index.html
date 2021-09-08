@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./sass/main.css">
 
 </head>
 <body>
   <header class="header">
-    <div class="header__top-section">
+    <div class="header__first">
       <ul class="header__list">
         <li class="header__item"><a href="#" class="header__link">О компании</a></li>
         <li class="header__item"><a href="#" class="header__link">Доставка</a></li>
@@ -23,10 +23,12 @@
         <li class="header__item"><a href="#" class="header__link">Новости</a></li>
         <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
       </ul>          
-      <button class="button header__button">Перезвоните мне</button>
-      <a href="#" class="header__img-link"><img src="./img/lock_icon.jpg" alt="замочек" class="icon-lock"></a>
+      <div class="header__first-buttons">
+        <button class="button header__button">Перезвоните мне</button>
+      <a href="#" class="header__img-link"><img src="./img/lock_icon.jpg" alt="замочек" class="header__icon"></a>
+      </div>
     </div>
-    <div class="header__second-section">
+    <div class="header__second">
       <ul class="header__list">
         <li class="header__item">
           <a href="#" class="header__link">
@@ -34,25 +36,31 @@
           </a>
         </li>
         <li class="header__item">
-          <img src="./img/point_2_icon.jpg" alt="" class="header__link">
-          <address class="header__address">м. Кропоткинская</address>
-          <address class="header__address">Соймоновский проезд, д.7 с.1</address>
+          <img src="./img/point_2_icon.jpg" alt="" class="header__icon">
+          <address class="cont">
+          <span class="header__text">м. Кропоткинская</span>
+          <span class="header__text">Соймоновский проезд, д.7 с.1</span>
+          </address>
         </li>
         <li class="header__item">
-          <img src="./img/time_2_icon.jpg" alt="" class="header__link">\
+          <img src="./img/time_2_icon.jpg" alt="" class="header__icon">
+          <div class="cont">
           <span class="header__text">Пн - Пт     11 - 20</span>
           <span class="header__text">Сб - Вск    11 - 18</span>
+        </div>
         </li>
         <li class="header__item">
-          <img src="./img/tel_2_icon.jpg" alt="" class="header__link">\
-          <span class="header__text"><a href="tel:+7 800 000 00 00" class="header__link"></a></span>
-          <span class="header__text"><a href="tel:+7 800 000 00 00" class="header__link"></a></span>
+          <img src="./img/tel_2_icon.jpg" alt="" class="header__icon">
+          <div class="cont">
+            <span class="header__text"><a href="tel:+7 800 000 00 00" class="header__link">+7 800 000 00 00</a></span>
+          <span class="header__text"><a href="tel:+7 800 000 00 00" class="header__link">+7 800 000 00 00</a></span>
+          </div>
         </li>
-        <li class="header__item"><img src="./img/basket_icon.jpg" alt=""></li>
+        <li class="header__item"><img src="./img/basket_icon.jpg" alt="" class="header__icon"></li>
         
       </ul>
     </div>
-    <div class="header__third-section">
+    <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item"><a href="#" class="header__link">Пряжа</a></li>
         <li class="header__item"><a href="#" class="header__link">Спицы</a></li>
@@ -62,11 +70,322 @@
         <li class="header__item"><a href="#" class="header__link">МК и описания</a></li>
         <li class="header__item"><a href="#" class="header__link">Модели</a></li>
       </ul>
-    </div>
+    </nav>
     <form action="" class="header__form">
       <img src="./img/search_2_icon.jpg" alt="" class="header__icon">
-      <input type="Поиск">
+      <input class="header__input" type="text" placeholder="Поиск">
     </form>
   </header>
+  <main class="main">
+    <section class="main__hero ">
+      <div class="container">
+        <div class="siema">
+          <div><img src="./img/hero-bg.jpg" alt=""></div>
+          <div><img src="./img/hero-bg.jpg" alt=""></div>
+          <div><img src="./img/hero-bg.jpg" alt=""></div>
+          <div><img src="./img/hero-bg.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item"><img src="./img/Sheep_icon.jpg" alt="" class="advantages__img">
+          <span>Только 
+            натуральный
+            состав</span></li>
+        <li class="advantages__item"><img src="./img/avi_icon 1.jpg" alt="" class="advantages__img">
+          <span>Актуальное 
+            наличие 
+            на сайте</span></li>
+        <li class="advantages__item"><img src="./img/delivery_icon.jpg" alt="" class="advantages__img">
+          <span>Быстрая 
+            отправка</span></li>
+        <li class="advantages__item"><img src="./img/796959_interface.jpg" alt="" class="advantages__img">
+          <span>Удобное  
+            расположение</span></li>
+        <li class="advantages__item"><img src="./img/guy_in_headphones.jpg" alt="" class="advantages__img">
+          <span>Помощь 
+            в подборе 
+            товаров</span></li>
+      </ul>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <h2 class="about-us__title">ДОБРО ПОЖАЛОВАТЬ В НАШ НОВЫЙ МАГАЗИН!</h2>
+        <span class="about-us__text">Мы садимся вязать, и вселенная вокруг начинает жить по-другому. Точнее, мы создаем 
+          собственную вселенную, в которой мы отдыхаем, вдохновляемся и создаем шедевры. 
+          Наш магазин за то, чтобы вы занимались своим любимым делом с удовольствием. Наш 
+          магазин – это место, где вам предложат пряжу и инструмент исключительного качества 
+          для создания лучших творений, которые вы только задумали. Наш магазин – это место, 
+          куда вы просто можете прийти поболтать и выпить чашечку кофе за вязанием  </span>
+          <a href="#" class="about-us__link">Узнать о нас больше</a>
+        <img src="./img/play-icon.jpg" alt="" class="about-us__video">
+          
+      </div>
+
+    </section>  
+    <section class="sales-cards">
+      <ul class="sales-cards__button-list">
+        <li class="sales-cards__buttons-item"><button class="sales-cards__button"><img src="./img/icons8-new.png" alt="" class="sales-cards__icon"><span class="sales-cards__text">
+          Новинки
+        </span></button></li>
+        <li class="sales-cards__buttons-item"><button class="sales-cards__button"><img src="./img/icons8-hot-price.png" alt="" class="sales-cards__icon"><span class="sales-cards__text">
+          Скидки
+        </span></button></li>
+        <li class="sales-cards__buttons-item"><button class="sales-cards__button"><img src="./img/big-finger-like.png" alt="" class="sales-cards__icon"><span class="sales-cards__text">
+          Популярные
+        </span></button></li>
+      </ul>
+      <ul class="sales-cards__change-items-order-list">
+        <li class="sales-cards__change-items-order-item"><button class="button"><img src="./img/elem-direct-icon1.png" alt="" class="button__icon"></button></li>
+        <li class="sales-cards__change-items-order-item"><button class="button"><img src="./img/elem-direct-icon2.png" alt="" class="button__icon"></button></li>
+      </ul>
+      <div class="sales-cards__cards-cont">
+        <img src="./img/hearth-with.png" alt="" class="sales-cards__icons">
+        <img src="./img/ecommerce_graph.png" alt="" class="sales-cards__icons">
+        <ul class="sales-cards__stars-list">
+          <li class="sales-cards__stars-items">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/big-finger-like.png" style="background: blue; border-radius: 50%;" alt="" class="sales-cards__identif-icon">
+            <img src="./img/thread1.png" alt="" class="sales-cards__main-img">
+            <span class="sales-cards__name-wool">COTTON-MERINO</span>
+            <img src="./img/colors-of-cotton.png" alt="" class="sales-cards__wool-color">
+            <button class="sales-cards__view">Показать все</button>
+            <h3 class="sales-cards-title">Schachenmayr Regia</h3>
+            <span class="sales-cards__description">60% Кидмохер, 33 % Бамбук, 7% Люрекс</span><span class="sales-cards__price">1500 р</span><a href="" class="sales-cards__button">К товару</a></li>
+        </ul>
+      </div>
+      <div class="sales-cards__cards-cont">
+        <img src="./img/hearth-with.png" alt="" class="sales-cards__icons">
+        <img src="./img/ecommerce_graph.png" alt="" class="sales-cards__icons">
+        <ul class="sales-cards__stars-list">
+          <li class="sales-cards__stars-items">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/big-finger-like.png" style="background: blue; border-radius: 50%;" alt="" class="sales-cards__identif-icon">
+            <img src="./img/thread2.png" alt="" class="sales-cards__main-img">
+            <span class="sales-cards__name-wool">COTTON-MERINO</span>
+            <img src="./img/colors-of-cotton.png" alt="" class="sales-cards__wool-color">
+            <button class="sales-cards__view">Показать все</button>
+            <h3 class="sales-cards-title">Schachenmayr Regia</h3>
+            <span class="sales-cards__description">60% Кидмохер, 33 % Бамбук, 7% Люрекс</span><span class="sales-cards__price">1500 р</span><a href="" class="sales-cards__button">К товару</a></li>
+        </ul>
+      </div>
+      <div class="sales-cards__cards-cont">
+        <img src="./img/hearth-with.png" alt="" class="sales-cards__icons">
+        <img src="./img/ecommerce_graph.png" alt="" class="sales-cards__icons">
+        <ul class="sales-cards__stars-list">
+          <li class="sales-cards__stars-items">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/big-finger-like.png" style="background: blue; border-radius: 50%;" alt="" class="sales-cards__identif-icon">
+            <img src="./img/thread3.png" alt="" class="sales-cards__main-img">
+            <span class="sales-cards__name-wool">COTTON-MERINO</span>
+            <img src="./img/colors-of-cotton.png" alt="" class="sales-cards__wool-color">
+            <button class="sales-cards__view">Показать все</button>
+            <h3 class="sales-cards-title">Schachenmayr Regia</h3>
+            <span class="sales-cards__description">60% Кидмохер, 33 % Бамбук, 7% Люрекс</span><span class="sales-cards__price">1500 р</span><a href="" class="sales-cards__button">К товару</a></li>
+        </ul>
+      </div>
+      <div class="sales-cards__cards-cont">
+        <img src="./img/hearth-with.png" alt="" class="sales-cards__icons">
+        <img src="./img/ecommerce_graph.png" alt="" class="sales-cards__icons">
+        <ul class="sales-cards__stars-list">
+          <li class="sales-cards__stars-items">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/star-with.png" alt="" class="sales-cards__stars-icon">
+            <img src="./img/big-finger-like.png" style="background: blue; border-radius: 50%;" alt="" class="sales-cards__identif-icon">
+            <img src="./img/thread4.png" alt="" class="sales-cards__main-img">
+            <span class="sales-cards__name-wool">COTTON-MERINO</span>
+            <img src="./img/colors-of-cotton.png" alt="" class="sales-cards__wool-color">
+            <button class="sales-cards__view">Показать все</button>
+            <h3 class="sales-cards-title">Schachenmayr Regia</h3>
+            <span class="sales-cards__description">60% Кидмохер, 33 % Бамбук, 7% Люрекс</span><span class="sales-cards__price">1500 р</span><a href="" class="sales-cards__button">К товару</a></li>
+        </ul>
+      </div>
+
+      <div class="sales-cards__button">
+        <img src="./img/icons8-new.png" alt="" class="sales-cards__button-icon">
+        <a href="" class="sales-cards__link">Все новинки</a></div>
+    </section>
+    <section class="our-brends">
+      <h2 class="our-brends__title">НАШИ БРЕНДЫ</h2>
+      <span class="our-brends__text"></span>
+      <ul class="our-brends__list">
+        <li class="our-brends__item"><img src="./img/Rectangle1.png" alt="" class="our-brends__img"><span class="our-brends__descript">Borgo de Pazzi</span></li>
+        <li class="our-brends__item"><img src="./img/Rectangle2.png" alt="" class="our-brends__img"><span class="our-brends__descript">Schachenmayr Regia</span></li>
+        <li class="our-brends__item"><img src="./img/Rectangle3.png" alt="" class="our-brends__img"><span class="our-brends__descript">Sandnes Garn</span></li>
+        <li class="our-brends__item"><img src="./img/Rectangle4.png" alt="" class="our-brends__img"><span class="our-brends__descript">Infinity.Design</span></li>
+        <li class="our-brends__item"><img src="./img/Rectangle5.png" alt="" class="our-brends__img"><span class="our-brends__descript">Holst Garn</span></li>
+        <li class="our-brends__item"><img src="./img/Rectangle6.png" alt="" class="our-brends__img"><span class="our-brends__descript">Casagrande</span></li>
+
+      </ul>
+      <button class="our-brends__button">Показать все<img src="./img/check-to-down.png" alt="" class="button__icon"></button>
+    </section>
+    <section class="review">
+      <h3 class="reviews__title">ОТЗЫВЫ</h3>
+      <div class="container">
+        
+          <div class="reviews__review-cont">
+            <h3 class="reviews__name"></h3>
+            <img src="./img/ms-knitkin.png" alt="" class="reviews__avatar"><span class="reviews__date"></span>
+            <p class="reviews__text">Не могя остановиться, вяжу и вяжу как заведенный, и это все благодаря  магазину.  Эти демоны снабжают меня  всем необходимым, не выходя из дома.  Красавчики.</p>
+            <a href="" class="reviews__link">Подробнее</a>
+            <ul class="star__list">
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+            </ul>
+          </div>
+          <div class="reviews__review-cont">
+            <h3 class="reviews__name"></h3>
+            <img src="./img/king.png" alt="" class="reviews__avatar"><span class="reviews__date"></span>
+            <p class="reviews__text">Был гол как сокол, теперь в мериносах и альпаках как король . Спасибо, баяре, порадовали на старости лет.  </p>
+            <a href="" class="reviews__link">Подробнее</a>
+            <ul class="star__list">
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+              <li class="star__item"><img src="./img/star-with.png" alt="" class="star__img"></li>
+            </ul>
+          </div>
+         
+      </div>
+    </section>
+    <section class="shop-news">
+      <div class="shop-news__one-block">
+        <h3 class="shop-news__title">НОВОСТИ МАГАЗИНА</h3>
+      <ul class="shop-news__list">
+        <li class="shop-news__item"><img src="./img/news1.png" alt="" class="shop-news__img"><span class="shop-news__text">Слушайте, а вы смогли бы быть
+          мужчиной? Недавно посетила
+          меня такая мысль.</span></li>
+        <li class="shop-news__item"><img src="./img/news2.png" alt="" class="shop-news__img"><span class="shop-news__text">Слушайте, а вы смогли бы быть
+          мужчиной? Недавно посетила
+          меня такая мысль.</span></li>
+        <li class="shop-news__item"><img src="./img/news3.png" alt="" class="shop-news__img"><span class="shop-news__text">Слушайте, а вы смогли бы быть
+          мужчиной? Недавно посетила
+          меня такая мысль.</span></li>
+      </ul>
+      </div>
+      <div class="shop-news__two-block">
+        <h3 class="shop-news__title">СТАТЬИ</h3>
+      <ul class="shop-news__articles-list">
+        <li class="shop-news__item">Про  то как гора родила мышь и другие приключения  креативщиков в интернете </li>
+        <li class="shop-news__item">Про  то как гора родила мышь и другие приключения  креативщиков в интернете </li>
+        <li class="shop-news__item">Про  то как гора родила мышь и другие приключения  креативщиков в интернете </li>
+        <li class="shop-news__item">Про  то как гора родила мышь и другие приключения  креативщиков в интернете </li>
+      </ul>
+      <a href="#" class="shop-news__button">Все Статьи</a>
+      </div>
+    </section>
+    <section class="reg-form">
+      <form action="" class="reg-form__form">
+        <label for="" class="reg-form__label">
+          <h2 class="reg-form__label">Дарим скидку 5%</h2>
+          <p class="reg-form__text">Будьте в курсе наших последних новостей и выпуска продукции, подписавшись на нашу рассылку</p>
+          <input type="text" class="reg-form__input">
+
+        </label>
+        <button class="reg-form__button">Подписаться</button>
+      </form>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo-cont">
+          <img src="" alt="" class="footer__img">
+          <ul class="icon__list">
+            <li class="icon__item"><img src="" alt="" class="icon__img"></li>
+            <li class="icon__item"><img src="" alt="" class="icon__img"></li>
+            <li class="icon__item"><img src="" alt="" class="icon__img"></li>
+            <li class="icon__item"><img src="" alt="" class="icon__img"></li>
+          </ul>
+        </div>
+        <div class="footer__catalog-cont">
+          <ul class="footer__list">
+            <li class="footer__item"><h3 class="footer__title">Каталог</h3></li>
+            <li class="footer__item"><a href="#" class="footer__link">Пряжа</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Спицы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Крючки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Аксессуары</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Подарочные 
+              сертификаты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">МК и описания</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Модели</a></li>
+          </ul>
+        </div>
+        <div class="footer__info-cont">
+          <ul class="footer__list">
+            <li class="footer__item"><h3 class="footer__title">Информация</h3></li>
+            <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Оплата</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Возврат</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мероприятия</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__my-cab-cont">
+          <ul class="footer__list">
+            <li class="footer__item"><h3 class="footer__title">Личный кабинет</h3></li>
+            <li class="footer__item"><a href="#" class="footer__link">Войти</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Зарегистироваться</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Корзина</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer__contacts-cont">
+          <ul class="footer__list">
+            <li class="footer__item"><h3 class="footer__title">Контакты</h3></li>
+            <li class="footer__item"><h4 class="footer__title">Время работы:</h4><span class="footer__text">Пн - Пт   11 - 20</span>
+              <span class="footer__text">Сб - Вск   11 - 18</span></li>
+            <li class="footer__item"><h4 class="footer__title">Адрес:</h4> 
+              <address class="footer__address">
+                <a class="footer__text">Соймоновский проезд, д.7 с.1</a>
+              </address></li>
+              <li class="footer__item"><h4 class="footer__title">Телефоны:</h4>
+                <a class="footer__text" href="tel:+7 800 000 00 00">+7 800 000 00 00</a><a class="footer__text" href="tel:+7 800 000 00 00">+7 800 000 00 00</a></li>
+                <li class="footer__item"><h4 class="footer__title">Почта:</h4><a class="footer__text" href="email:info@sittingknitting.ru">info@sittingknitting.ru</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="copy"><span class="copy__text">&copy;2018-2021 ИП Зыкина Елена Геннадьевна. All Rights Reserved.</span></div>
+    </footer>
 </body>
+<script src="./js/siema-1.5.1/dist/siema.min.js"></script>
+<script>
+  new Siema({
+  selector: '.siema',
+  duration: 200,
+  easing: 'ease-out',
+  perPage: 2,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: true,
+  rtl: false,
+  onInit: () => {},
+  onChange: () => {},
+});
+</script>
+<script src="./js/script.js"></script>
 </html>
